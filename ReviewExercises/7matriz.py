@@ -10,7 +10,7 @@ Rows = 3, Columns = 4Expected Result : [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6]
 
 fila = int(input("Sartu filak: "))
 columna = int(input("Sartu zutabeak: "))
-array = [[0 for col in range(col)] for row in range(fila)]
+
 
 for row in range(fila):
     for col in range(columna):

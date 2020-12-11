@@ -8,7 +8,7 @@ n = int(input("Sartu zenbaki bat: "))
 cont = 0
 
 while(n!=0):
-    n=n//10
+    n=n/10
     cont=cont+1
 
 print("Zenbaki kopurua ",cont," da")

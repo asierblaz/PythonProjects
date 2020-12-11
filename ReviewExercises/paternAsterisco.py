@@ -5,13 +5,13 @@ Write a Python program to construct the following pattern, using a nested for lo
 
 '''
 zabalera = 5;
-for i in range(0,zabalera):
+for i in range(zabalera):
     for j in range(i):
         print('* ', end="")
     print('')
-
-for i in range(0,zabalera):
-    for j in range(1,zabalera+1):
+for i in range(zabalera):
+    for j in range(zabalera):
         print('* ', end="")
     zabalera=zabalera-1
     print('')
+
