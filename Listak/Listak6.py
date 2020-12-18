@@ -4,9 +4,12 @@ Write a Python program to remove duplicates from a list.
 '''
 
 
-list= ['a','e','e','i','o']
+list= ['a','e','e','i','o','u']
 
 list2=[]
-cont = 0
-for cont,i in enumerate(list):
-    print(cont)
+for i in list:
+    if i not in list2:
+        list2.append(i)
+list=list2
+
+print(list)

@@ -12,8 +12,7 @@ fila = int(input("Sartu filak: "))
 columna = int(input("Sartu zutabeak: "))
 
 
-for row in range(fila):
-    for col in range(columna):
-        array[row][col]= row*col
-
-print(array)
+for i in range(1,fila+1):
+     for j in range(1,columna+1):
+         print(i*j,end="  ")
+     print("\n")
