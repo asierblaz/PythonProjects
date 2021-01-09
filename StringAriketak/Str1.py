@@ -14,5 +14,5 @@ for i in texto:
     if(i.isupper()):
         mayus=mayus+1
 
-print(mayus)
-print(minus)
+print('Mayuskulak = ', mayus)
+print('Minuskulak = ',minus)
