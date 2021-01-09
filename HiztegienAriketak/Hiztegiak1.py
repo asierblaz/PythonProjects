@@ -7,3 +7,7 @@ Eskatu erabiltzaileari moneta eta erakutsi bere ikurra edo mezua. Hiztegian ez b
 
 diccionario = {'Euro': '€', 'Dollar': '$', 'Yen': '¥'}
 
+entrada= input('sartu moneta ')
+
+
+print(diccionario[entrada])
