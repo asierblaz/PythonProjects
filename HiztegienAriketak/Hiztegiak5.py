@@ -7,4 +7,49 @@ c.	Eragiketa bakoitzaren ondoren, programak orain arte kobratutako zenbatekoa et
 
 '''
 
-faktura ={}
+factura ={'Fact1': '450','Fact2': '830', 'Fact3': '40', 'Fact5': '700'};
+
+
+print(factura)
+
+ordaindu =0
+kobratu =0
+opcion= int(input("\nAukeratu bat: "
+      "\n 1) Faktura Berria gehitu"
+      "\n 2) Faktura Ordaindu"
+      "\n 3) irten"
+                  ""
+                  "\n"));
+while( opcion!=3):
+    if (opcion == 1):
+     kodea= str(input("sartu fakturaren kodea "))
+     prezioa= float(input("sartu fakturaren prezioa "))
+     factura[kodea]=prezioa
+     ordaindu=ordaindu+ prezioa
+     print(factura)
+     print("Ordaindu Beharrekoa: ", ordaindu)
+     print("Ordaindu Kobratuta: ", kobratu)
+     opcion = int(input("\nAukeratu bat: "
+                        "\n 1) Faktura Berria gehitu"
+                        "\n 2) Faktura Ordaindu"
+                        "\n 3) irten"
+                        ""
+                        "\n"));
+
+    else:
+        kodea = str(input("sartu fakturaren kodea  "))
+        kobratu= kobratu+ int(factura[kodea])
+        factura.pop(kodea)
+        print(factura)
+        print("Ordaindu Beharrekoa: ", ordaindu)
+        print("Ordaindu Kobratuta: ", kobratu)
+        opcion = int(input("\nAukeratu bat: "
+                           "\n 1) Faktura Berria gehitu"
+                           "\n 2) Faktura Ordaindu"
+                           "\n 3) irten"
+                           ""
+                           "\n"));
+
+    print("Ordaindu Beharrekoa: " ,ordaindu)
+    print("Ordaindu Kobratuta: " ,kobratu)
+    print("\n")
