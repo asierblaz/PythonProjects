@@ -5,5 +5,5 @@
 '''
 
 texto= "Cuantas a's hay en este texto?"
-
-print('Hay ', texto.count('a'), 'en el texto')
+texto= texto.upper();
+print('Hay ', texto.count('A'), 'en el texto')

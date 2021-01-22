@@ -26,4 +26,4 @@ print(listaconj.union(trabajo))
 listaconj.update(trabajo)
 print(listaconj)
 
-print(trabajo in listaconj)
+print(trabajo <= listaconj)

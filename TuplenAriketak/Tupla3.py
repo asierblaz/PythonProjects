@@ -9,4 +9,4 @@ asteburu= 'Sabado','Domingo'
 semana= laborable,asteburu
 
 for i,val in enumerate(semana):
-    print(i,val)
+    print(i+1,val)

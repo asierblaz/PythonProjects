@@ -3,7 +3,7 @@
 
 4.	A partir de dos parámetros, s, original y reemplazo, que reemplace las apariciones del string original en s por reemplazo'''
 
-texto= "SD Eibar partidua galdu du"
+texto= input("Sartu ")
 
 print(texto)
 

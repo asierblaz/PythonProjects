@@ -6,4 +6,7 @@ texto= "LEOMessi"
 
 texto2= texto.split('M')
 
-print(texto2)
+nuevo = texto.find(texto2)
+
+
+print(texto2[nuevo+1:len(texto)])
