@@ -3,7 +3,6 @@
 
 1.	Idatzi zenbaki oso positibo bat jaso eta bere faktoriala itzultzen duen programa.
 '''
-
 def faktoriala (n):
     emaitza = 1
     i = 1
@@ -12,6 +11,10 @@ def faktoriala (n):
         i = i + 1
     return emaitza
 
+
 n= int (input("Sartu zenbaki oso positibo bat: "))
 
 print(n," zenbakiaren faktoriala = ", faktoriala(n))
+
+
+
