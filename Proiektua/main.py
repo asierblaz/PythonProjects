@@ -2,32 +2,49 @@
 
 Funtzioen proiektua
 '''
-pelikulak= ["El rey leon"]
+pelikulak= ["El rey leon", "El Señor de Los anillos", "Interestellar"]
+
+pelikulakHizt = {""}
 
 
-def peliculaGehitu():
-    print("sartu")
-    pelikulak.append("hola")
+def pelikulakImprimatu():
+    for cont, val in enumerate(pelikulak):
+        print(cont+1, val)
+    print("\n")
+
+def pelikulaGehitu():
+    pelikulak.append(input("Sartu pelikula berriaren izena:"))
+    print("Pelikulen lista eguneratu egin da")
+    pelikulakImprimatu()
+
+def pelikulakEzabatu():
+    print("Zein pelikula ezabatu nahi duzu?")
+    pelikulakImprimatu()
+    aukera= int( input("\n Sartu ezabatu nahi duzun pelikularen zenbakia."))
+    pelikulak.pop(aukera-1)
+    print("Pelikulen lista eguneratu egin da")
+    pelikulakImprimatu()
+
 
 
 def administrazioa():
     print("Ongi etorri bideoklubaren administraziora")
     print("*  1. Pelikulak gehitu \n"
-    + "*  2. Pelikulak Aldatu \n"
-     + "* 3. Pelikulak Ezabatu \n* 4. Irten")
+    + "*  2. Pelikulak Ezabatu \n"
+      "*  3. Irten")
 
     n = int(input("Aukeratu zenbaki bat: "))
 
-    while n != 4:
+    while n != 3:
         if n == 1:
             print("Pelikulak gehitu: \n ")
-            peliculaGehitu();
-        if n == 2:
-            print("Pelikulak Aldatu")
-        if n == 3:
-            print("Pelikulak ezabatu")
+            pelikulaGehitu();
 
-        print("*  1. Pelikulak gehitu \n"+ "*  2. Pelikulak Aldatu \n" + "*  2. Pelikulak Ezabatu \n")
+        if n == 2:
+            print("Pelikulak ezabatu")
+            pelikulakEzabatu()
+
+        print("*  1. Pelikulak gehitu \n"+  "*  2. Pelikulak Ezabatu \n*  3. Irten")
         n = int(input("Aukeratu zenbaki bat: "))
 
 '''MENUA '''
@@ -36,7 +53,7 @@ print(
     , "\n                     Bideoklub                               ",
     "\n===========================================================================================================")
 
-print("*  1. Pelikulak ikusi 1\n"
+print("*  1. Pelikulak ikusi \n"
       + "*  2. Aukera 2\n"
       + "*  3. Aukera 3\n"
       + "*  4. Aukera 4\n"
@@ -49,7 +66,8 @@ print(" ")
 
 while n != 6:
     if n == 1:
-        print("1")
+        print("\nHauek dira katalogoan daudel pelikulak")
+        pelikulakImprimatu()
     if n == 2:
         print("2")
     if n == 3:
@@ -71,7 +89,7 @@ while n != 6:
         , "\n                     Bideoklub                               ",
         "\n===========================================================================================================")
 
-    print("*  1. Pelikulak ikusi 1\n"
+    print("*  1. Pelikulak ikusi \n"
           + "*  2. Aukera 2\n"
           + "*  3. Aukera 3\n"
           + "*  4. Aukera 4\n"
@@ -81,4 +99,3 @@ while n != 6:
     n = int(input("Aukeratu zenbaki bat: "))
 
 
-print(pelikulak)
