@@ -1,10 +1,9 @@
 
 
-
-altura = int(input ('altura '))
-ancho = int(input ('ancho '))
-grosor=int(input ('grosor '))
-base = int(input ('base '))
+altura= 20
+ancho =5
+grosor= 5
+base =20
 
 
 for i in range (altura-grosor):
