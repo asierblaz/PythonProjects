@@ -9,10 +9,10 @@ for i in range(zabalera):
     for j in range(i):
         print('* ', end="")
     print('')
+
 for i in range(zabalera):
     for j in range(zabalera):
         print('* ', end="")
     zabalera=zabalera-1
     print('')
-
 
