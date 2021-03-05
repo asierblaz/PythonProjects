@@ -15,7 +15,7 @@ base =10
 ancho1=ancho
 for i in range (altura):#filas
     for j in range (ancho):#columnas
-        if(i==0 or i==altura-1 or j==0 or j==ancho-1 or ((i==altura-grosor)and j>=ancho1-1) ):
+        if(i==0 or i==altura-1 or j==0 or j==ancho-1 or ((i==altura-grosor)and j>=ancho1-1)):
             print('* ', end='')
         else:
             print('  ', end='')

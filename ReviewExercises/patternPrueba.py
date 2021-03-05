@@ -15,7 +15,7 @@ for i in range(zabalera):
         if(j>=i):
             print('* ', end="")
         else:
-            print('? ', end="")
+            print('  ', end="")
 
 
     print('')
